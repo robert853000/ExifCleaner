@@ -1,0 +1,53 @@
+﻿<Window x:Class="ExifCleaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExifCleaner"
+        mc:Ignorable="d"
+        Title="ExifCleaner" Height="450" Width="800">
+
+    <DockPanel>
+        <!-- Horní toolbar -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Background="#EEE" >
+            <Button Name="BtnOpen" Content="Otevřít obrázek" Margin="5,0"/>
+            <Button Name="BtnClean" Content="Odstranit metadata" Margin="5,0"/>
+            <CheckBox Name="ChkNoise" Content="Přidat náhodný šum (anonymizace)" VerticalAlignment="Center" Margin="15,0"/>
+        </StackPanel>
+
+        <!-- Spodní status bar -->
+        <StatusBar DockPanel.Dock="Bottom">
+            <TextBlock Name="StatusText" Text="Připraven" />
+        </StatusBar>
+
+        <!-- Hlavní obsah: levý náhled + pravý seznam -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Náhled obrázku -->
+            <Border Grid.Column="0" BorderBrush="Gray" BorderThickness="1" Margin="5">
+                <Image Name="ImagePreview" Stretch="Uniform"/>
+            </Border>
+
+            <!-- Metadata -->
+            <Border Grid.Column="1" BorderBrush="Gray" BorderThickness="1" Margin="5">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Metadata" FontWeight="Bold" Margin="5"/>
+                        <ListView Name="MetadataList" Margin="5">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Klíč" DisplayMemberBinding="{Binding Key}" Width="150"/>
+                                    <GridViewColumn Header="Hodnota" DisplayMemberBinding="{Binding Value}" Width="250"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </DockPanel>
+</Window>

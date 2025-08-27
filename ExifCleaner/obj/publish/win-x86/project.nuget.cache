@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "C2EFllXjOzg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\redfo\\source\\repos\\ExifCleaner\\ExifCleaner\\ExifCleaner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\redfo\\.nuget\\packages\\metadataextractor\\2.8.1\\metadataextractor.2.8.1.nupkg.sha512",
+    "C:\\Users\\redfo\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\redfo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\redfo\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\redfo\\.nuget\\packages\\xmpcore\\6.1.10.1\\xmpcore.6.1.10.1.nupkg.sha512",
+    "C:\\Users\\redfo\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\9.0.8\\microsoft.netcore.app.runtime.win-x86.9.0.8.nupkg.sha512",
+    "C:\\Users\\redfo\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\9.0.8\\microsoft.windowsdesktop.app.runtime.win-x86.9.0.8.nupkg.sha512",
+    "C:\\Users\\redfo\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\9.0.8\\microsoft.aspnetcore.app.runtime.win-x86.9.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
